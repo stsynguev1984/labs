@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="CCIE Ent Infra" version="1" scripttimeout="300" lock="0" author="alexguse">
+  <topology>
+    <nodes>
+      <node id="1" name="R1" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="b2616041-de49-4061-8f75-b99706b2e595" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="222" top="441">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="7"/>
+      </node>
+      <node id="2" name="R2" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="3a9768ae-3e1c-4e91-96f0-4941115da3cc" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="999" top="438">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="8"/>
+      </node>
+      <node id="3" name="R3" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="537a9863-95ba-4ab0-b2ef-bb45db87ad94" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="447" top="864">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="9"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="11"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="14"/>
+      </node>
+      <node id="4" name="R4" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="25e53f9e-c0a5-430a-938b-2b419b99e514" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="741" top="870">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="10"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="12"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="13"/>
+      </node>
+      <node id="5" name="R5" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="e9d903a2-3b9b-4a9b-9d91-f5b67a273c5c" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="447" top="1158">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="11"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="13"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="15"/>
+      </node>
+      <node id="6" name="R6" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="b97006c4-be90-48a0-b417-9aa454f3b5e9" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="741" top="1164">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="12"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="14"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="16"/>
+      </node>
+      <node id="7" name="R7" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="fc08b328-c75d-4371-8217-fe9b271403e0" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="441" top="1413">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="15"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="17"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="26"/>
+      </node>
+      <node id="8" name="R8" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="5b86ba2f-a1e5-411e-9470-2bb15d42c843" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="744" top="1407">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="16"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="17"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="27"/>
+      </node>
+      <node id="9" name="R9" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="4c6f5b41-dd26-4e6a-ae8b-ddf419d25bf2" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="597" top="1617">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="24"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="25"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="26"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="27"/>
+      </node>
+      <node id="10" name="R10" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="be9e3341-348e-4aed-b812-3920d7c2611c" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="456" top="1854">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="21"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="24"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="28"/>
+      </node>
+      <node id="11" name="R11" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="bbfba09d-0300-4840-a8c3-569369173b18" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="771" top="1848">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="22"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="25"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="29"/>
+      </node>
+      <node id="12" name="R12" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="6053d5d8-9e7b-4630-9855-614631f0e3d9" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="936" top="2298">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="23"/>
+      </node>
+      <node id="13" name="R13" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="121aae4a-1aca-4b6c-bdbc-0bbab53fdff6" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="1344" top="426">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="34"/>
+      </node>
+      <node id="14" name="R14" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="d93e3617-d4d3-409d-bd1c-e34791a32194" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="1350" top="813">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="34"/>
+      </node>
+      <node id="15" name="R15" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="a0b0dad1-3dca-489b-bcf8-d4b6b32b59a2" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="1074" top="882">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="35"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="32"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="30"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="36"/>
+      </node>
+      <node id="16" name="R16" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="5c3d2089-5338-427f-af6f-e24d9309be66" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="1077" top="1530">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="28"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="29"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="30"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="31"/>
+      </node>
+      <node id="17" name="R17" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="9d2f68a9-de54-40f5-b0b9-509e4beee9e4" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Router.png" config="0" left="1353" top="1197">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="32"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="31"/>
+      </node>
+      <node id="18" name="SW1" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="80efe716-bc74-406e-99ee-4b7b97050ac8" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="450" top="432">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="1"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="2"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="5"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="7"/>
+      </node>
+      <node id="19" name="SW2" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="80553a07-e0a3-4ee2-8515-1cdd08fc628e" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="741" top="429">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="1"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="2"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="6"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="8"/>
+      </node>
+      <node id="20" name="SW3" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="668899ad-c6e6-40ca-a078-6ff888870f1e" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="447" top="660">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="3"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="4"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="5"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="9"/>
+        <interface id="4" name="Gi1/0" type="ethernet" network_id="35"/>
+      </node>
+      <node id="21" name="SW4" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="7960a2c6-bd89-4ab0-bd7a-ee6ac4d3d526" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="738" top="654">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="3"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="4"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="6"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="10"/>
+        <interface id="4" name="Gi1/0" type="ethernet" network_id="36"/>
+      </node>
+      <node id="22" name="SW5" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="10ced68a-e685-413c-aca5-0a66eb492849" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="456" top="2058">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="18"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="19"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="21"/>
+      </node>
+      <node id="23" name="SW6" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="9b6d3ad5-258f-4d91-acf3-45783c3b39da" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="771" top="2055">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="18"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="20"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="22"/>
+      </node>
+      <node id="24" name="SW7" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m-15.2-2017032" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="eae4fdf8-65a0-4212-848e-338fa9753649" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" icon="Switch L3.png" config="0" left="606" top="2289">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="19"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="20"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="23"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-SW1iface_0" left="510" top="472" visibility="0"/>
+      <network id="2" type="bridge" name="Net-SW1iface_1" left="510" top="472" visibility="0"/>
+      <network id="3" type="bridge" name="Net-SW3iface_0" left="507" top="688" visibility="0"/>
+      <network id="4" type="bridge" name="Net-SW3iface_1" left="507" top="688" visibility="0"/>
+      <network id="5" type="bridge" name="Net-SW1iface_2" left="510" top="472" visibility="0"/>
+      <network id="6" type="bridge" name="Net-SW2iface_2" left="801" top="469" visibility="0"/>
+      <network id="7" type="bridge" name="Net-SW1iface_3" left="510" top="472" visibility="0"/>
+      <network id="8" type="bridge" name="Net-SW2iface_3" left="801" top="469" visibility="0"/>
+      <network id="9" type="bridge" name="Net-R3iface_0" left="507" top="904" visibility="0"/>
+      <network id="10" type="bridge" name="Net-R4iface_0" left="792" top="907" visibility="0"/>
+      <network id="11" type="bridge" name="Net-R5iface_0" left="507" top="618" visibility="0"/>
+      <network id="12" type="bridge" name="Net-R6iface_0" left="813" top="623" visibility="0"/>
+      <network id="13" type="bridge" name="Net-R5iface_1" left="507" top="734" visibility="0"/>
+      <network id="14" type="bridge" name="Net-R6iface_1" left="801" top="606" visibility="0"/>
+      <network id="15" type="bridge" name="Net-R7iface_0" left="498" top="472" visibility="0"/>
+      <network id="16" type="bridge" name="Net-R8iface_0" left="804" top="647" visibility="0"/>
+      <network id="17" type="bridge" name="Net-R7iface_1" left="498" top="541" visibility="0"/>
+      <network id="18" type="bridge" name="Net-SW5iface_0" left="516" top="697" visibility="0"/>
+      <network id="19" type="bridge" name="Net-SW7iface_0" left="684" top="901" visibility="0"/>
+      <network id="20" type="bridge" name="Net-SW7iface_1" left="666" top="928" visibility="0"/>
+      <network id="21" type="bridge" name="Net-R10iface_0" left="504" top="475" visibility="0"/>
+      <network id="22" type="bridge" name="Net-R11iface_0" left="822" top="506" visibility="0"/>
+      <network id="23" type="bridge" name="Net-R12iface_0" left="996" top="904" visibility="0"/>
+      <network id="24" type="bridge" name="Net-R9iface_0" left="657" top="229" visibility="0"/>
+      <network id="25" type="bridge" name="Net-R9iface_1" left="657" top="414" visibility="0"/>
+      <network id="26" type="bridge" name="Net-R9iface_2" left="657" top="677" visibility="0"/>
+      <network id="27" type="bridge" name="Net-R9iface_3" left="657" top="625" visibility="0"/>
+      <network id="28" type="bridge" name="Net-R16iface_0" left="1137" top="349" visibility="0"/>
+      <network id="29" type="bridge" name="Net-R16iface_1" left="1137" top="396" visibility="0"/>
+      <network id="30" type="bridge" name="Net-R16iface_2" left="1137" top="909" visibility="0"/>
+      <network id="31" type="bridge" name="Net-R16iface_3" left="1137" top="866" visibility="0"/>
+      <network id="32" type="bridge" name="Net-R17iface_1" left="1413" top="597" visibility="0"/>
+      <network id="33" type="bridge" name="Net-R17iface_0" left="1413" top="760" visibility="0"/>
+      <network id="34" type="bridge" name="Net-R13iface_0" left="1665" top="320" visibility="0"/>
+      <network id="35" type="bridge" name="Net-R15iface_0" left="1110" top="593" visibility="0"/>
+      <network id="36" type="bridge" name="Net-R15iface_3" left="1110" top="758" visibility="0"/>
+    </networks>
+  </topology>
+</lab>
